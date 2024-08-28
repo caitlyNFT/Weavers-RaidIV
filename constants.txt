@@ -1,0 +1,14 @@
+ForgeWorld = _9QcH-Ma0LRvYInsa36d8zEkMRB9tfoAyEaLHmlUw3U
+forgeGameplay = ElHCsTvRsN7_5Bpy1d3dC4kaVtAXMWiCMVz46H6sP3k
+pickaxe = g307wX7lCRpqwLP1NEaZV_R5yg0sasWmqAX2bdQ7h-E
+informationAgent = 73Dx0a4DuC3GyG-ovRL7S9G2Ddd4zBmVZ8SsJ4hVRS8
+oreSeller = hlm1bCyGVpl8wuKZDcbHaU4GkqcELyqWWdwpX60aTas
+knifeForger = EJFmQ6VbhYsrxKkMV3sRtgR0qJacw_-DyD_5AFcI6eg
+
+knifeToken = Rs1BVOkXSFCyhzeRRMAvCdysZBVjlZVFVdSHUNSI_4k
+limestoneToken = Ft6jNe3CBg_u2Rl4Z8t7AoF30J5iNd9u5FC7Y2N_Dp4
+strangeOreToken = eLAgDHhcthcmjeaywlqkKTo8oPLZOc3YTQdU5ENJjKY
+
+
+demoWalet = QkO9hGotfx1cd6Nrs4jdnNt595cNS0ck9VUOCfUrPAw
+demontus = 8rUuwBygyO5gtAML90uPzhVJWTo4Mphqc6zEQT6Rzw0
