@@ -1,11 +1,11 @@
--- Name: Ore Seller
+-- Name: Profile Funder
 
 local json = require("json")
 local ao = require("ao")
 
 Constants = Constants or {}
 
-Constants.Name = "Ore Seller"
+Constants.Name = "Profile Funder"
 
 Constants.GameplayProcess = "ElHCsTvRsN7_5Bpy1d3dC4kaVtAXMWiCMVz46H6sP3k"
 
@@ -17,47 +17,29 @@ Constants.BazarUCM = "U3TjJAZWJjlWBB4KAXSHKzuky81jtyh0zqH8rUL4Wd0"
 
 Constants.OrePrice = 100000000000
 
-Constants.OrderMessage = "Create-Order"
-
-Constants.SwapToken = "eLAgDHhcthcmjeaywlqkKTo8oPLZOc3YTQdU5ENJjKY"
 
 -- Schema
-function BuyOreSchemaTags()
+function BuyOreSchemaTags(profileId)
   return [[
 {
   "type": "object",
   "required": [
     "Action",
-    "Target",
     "Recipient",
-    "Quantity",
-    "X-Order-Action",
-    "X-Swap-Token"
+    "Quantity"
   ],
   "properties": {
     "Action": {
       "type": "string",
       "const": "Transfer"
     },
-    "Target": {
-        "type": "string",
-        "const": "]] .. Constants.ARToken .. [["
-    },
     "Recipient": {
       "type": "string",
-      "const": "]] .. Constants.BazarUCM .. [["
+      "const": "]] .. profileId .. [["
     },
     "Quantity": {
       "type": "number",
       "const": ]] .. (Constants.OrePrice) .. [[,
-    },
-    "X-Order-Action": {
-      "type": "string",
-      "const": "]] .. Constants.OrderMessage .. [["
-    },
-    "X-Swap-Token": {
-      "type": "string",
-      "const": "]] .. Constants.SwapToken .. [["
     }
   }
 }
@@ -66,13 +48,13 @@ end
 
 function SchemaExternalHasProfile(profileId)
   return {
-    BuyOre = {
-      Target = profileId,       -- Can be nil? In that case it must be supplied externally
-      Title = "Purchase Strange Ore",
+    Fund = {
+      Target = Constants.ARToken, -- Can be nil? In that case it must be supplied externally
+      Title = "Fund Your Bazar Profile with .1 AR",
       Description =
-      "By clicking submit you are calling your Profile process to purchase Strange Ore for 0.1 AR on Bazar.",
+      "By clicking submit you are calling the AR token to transfer 0.1 to your Bazar process, this will allow you to purchase a Strange Ore.",
       Schema = {
-        Tags = json.decode(BuyOreSchemaTags()),
+        Tags = json.decode(BuyOreSchemaTags(profileId)),
         -- Data
         -- Result?
       },

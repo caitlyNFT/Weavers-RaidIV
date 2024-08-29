@@ -48,6 +48,7 @@ State.Agents = {
     "73Dx0a4DuC3GyG-ovRL7S9G2Ddd4zBmVZ8SsJ4hVRS8", -- InformationAgent
     "hlm1bCyGVpl8wuKZDcbHaU4GkqcELyqWWdwpX60aTas", -- OreSeller
     "EJFmQ6VbhYsrxKkMV3sRtgR0qJacw_-DyD_5AFcI6eg", -- Knife Forger
+    "wEGRe4FCf-BrhvkLxrLgoNO9c_5HnvkpehuHwEAaYss", -- Funder
 }
 
 

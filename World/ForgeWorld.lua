@@ -66,7 +66,7 @@ RealityEntitiesStatic = {
 
     -- OreSeller
     ['hlm1bCyGVpl8wuKZDcbHaU4GkqcELyqWWdwpX60aTas'] = {
-        Position = { 28, 25 },
+        Position = { 29, 25 },
         Type = 'Avatar',
         Metadata = {
             DisplayName = 'Ore Seller',
@@ -94,6 +94,20 @@ RealityEntitiesStatic = {
         },
     },
 
+    -- Funder
+    ['wEGRe4FCf-BrhvkLxrLgoNO9c_5HnvkpehuHwEAaYss'] = {
+        Position = { 27, 25 },
+        Type = 'Avatar',
+        Metadata = {
+            DisplayName = 'Funder',
+            -- Demo PickAxe
+            SpriteTxId = '0hXLb5i3C2EOeszSs4EBGu9BaMumZFsd98DkXAXV2g0',
+            Interaction = {
+                Type = 'SchemaExternalForm',
+                Id = 'Fund'
+            },
+        },
+    },
 }
 
 
